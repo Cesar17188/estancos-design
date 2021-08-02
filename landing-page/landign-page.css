@@ -1,0 +1,38 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "perpetua";
+}
+
+.header {
+  width: 100%;
+  font-size: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #000000;
+  align-items: center;
+}
+
+.header_img {
+  width: 140px;
+}
+
+.header_menu {
+  display: flex;
+  flex-direction: row;
+  margin-right: 50px;
+  margin: 0px;
+  border-top: 1px solid #ede499;
+  border-bottom: 1px solid #ede499;
+}
+
+.header_menu_group {
+  padding-right: 30px;
+  list-style: none;
+}
+
+.header_menu_link {
+  text-decoration: none;
+  color: #ede499;
+}
