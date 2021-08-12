@@ -4,24 +4,10 @@ body {
   font-family: "perpetua";
 }
 
-@media (max-width: 645px) {
+@media only screen and (max-width: 600px) {
   .header {
-    width: 100%;
-    font-size: 16px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: #000000;
-    align-items: center;
+    background-color: #443130;
   }
-  .header_top_menu {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
-    display: none;
-  }
-  
 }
 
 .header {
