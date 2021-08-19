@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0px;
   padding: 0px;
   font-family: "perpetua";
@@ -66,4 +66,127 @@ body {
   width: 277px;
   height: 267px;
   position: absolute;
+} */
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "perpetua";
+}
+:root{
+  --black: #2f2f2f;
+  --white: #ffffff;
+  --gold: #ede499;
+  --coffe: #443130;
+  --orange: #c19e72;
+}
+.main{
+  position: relative;
+  min-height: 100vh;
+  background: linear-gradient(#2f2f2f, #443130);
+  padding: 30px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main::before{
+  content: 'Estancos';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16vw;
+  font-weight: 700;
+  color: rgba(237, 228, 153, 0.05);
+}
+header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo{
+  max-width: 180px;
+}
+.navigation{
+  display: flex;
+}
+.navigation li{
+  list-style: none;
+}
+.navigation li a {
+  position: relative;
+  color: var(--gold);
+  margin-left: 40px;
+  text-decoration: none;
+  transition: 0.25s;
+}
+.navigation li a:hover{
+  color: var(--white);
+}
+.content{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+  z-index: 1;
+}
+.content h2 {
+  font-size: 5em;
+  font-weight: 300;
+  color: var(--orange);
+  text-align: center;
+}
+.content h2 span{
+  font-weight: 700;
+}
+.btn{
+  display: inline-block;
+  background: var(--gold);
+  color: var(--coffe);
+  text-decoration: none;
+  padding: 16px 36px;
+  margin-top: 20px;
+  border-radius: 50px;
+  font-size: 1.25em;
+  transition: 0.25s;
+}
+.btn:hover{
+  letter-spacing: 4px;
+}
+.escudo{
+  max-width: 90%;
+}
+.footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sci{
+  display: flex;
+}
+.sci li {
+  list-style: none;
+}
+.sci li a {
+  color: var(--orange);
+  font-size: 2em;
+  margin-right: 20px;
+  transition: 0.25;
+}
+.sci li a:hover{
+  color: var(--white);
 }
