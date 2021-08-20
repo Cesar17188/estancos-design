@@ -10,33 +10,6 @@
 </head>
 
 <body>
-    <!-- <header class="header">
-        <img class="header_img" src="https://drive.google.com/uc?export=view&id=10_4wtWX3SmbfQKSpWnyYhPydSPNBfngy"
-            alt="">
-        <ul class="header_menu">
-            <li class="header_menu_group">
-                <a class="header_menu_link" href="#">home</a>
-            </li>
-            <li class="header_menu_group">
-                <a class="header_menu_link" href="">about us</a>
-            </li>
-            <li class="header_menu_group">
-                <a href="" class="header_menu_link">store</a>
-            </li>
-            <li class="header_menu_group">
-                <a href="" class="header_menu_link">blog</a>
-            </li>
-            <li class="header_menu_group">
-                <a href="" class="header_menu_link">contact us</a>
-            </li>
-        </ul>
-    </header>
-    <section class="main">
-        <div class="main_container">
-            <img class="main_container_img"
-                src="https://drive.google.com/uc?export=view&id=17uac382X2dCpHI8FtF1BNCKuqVqjXt_D" alt="">
-        </div>
-    </section> -->
     <section class="main">
         <header>
             <a href="#"><img class="logo" src="https://drive.google.com/uc?export=view&id=10_4wtWX3SmbfQKSpWnyYhPydSPNBfngy" alt=""></a>
@@ -52,6 +25,24 @@
             <a href="#" class="btn">Entrar ahora</a>
             <img src="https://drive.google.com/uc?export=view&id=10_4wtWX3SmbfQKSpWnyYhPydSPNBfngy" class="escudo" alt="">
         </div>
+
+        <!-- slider content -->
+
+        <div class="slider">
+            <div class="slides active">
+                <h2><span>Ron</span></h2>
+                <h2><span>añejado</span></h2>
+            </div>
+            <div class="slides">
+                <h2><span>Whiskey</span></h2>
+                <h2><span>añejado</span></h2>
+            </div>
+            <div class="slides">
+                <h2><span>Mistella</span></h2>
+                <h2><span>varios <br> sabores</span></h2>
+            </div>
+        </div>
+
         <div class="footer">
             <ul class="sci">
                 <li><a href=""><ion-icon name="logo-facebook"></ion-icon></a></li>
@@ -59,7 +50,7 @@
                 <li><a href=""><ion-icon name="logo-instagram"></ion-icon></a></li>
             </ul>
             <div class="dots">
-                <span class="dot"></span>
+                <span class="dot active"></span>
                 <span class="dot"></span>
                 <span class="dot"></span>
             </div>
@@ -68,6 +59,25 @@
 
 
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script>
+        const slides = document.querySelectorAll('.slides');
+        const dots = document.querySelectorAll('.dot');
+
+        function setActive(i) {
+            for(slide of slides)
+            slide.classList.remove('active');
+            slides[i].classList.add('active');
+            for(dot of dots)
+            dot.classList.remove('active');
+            dots[i].classList.add('active');
+        }
+
+        for(let j=0; j<dots.length; j++){
+            dots[j].addEventListener('click', function() {
+                setActive(j)
+            })
+        }
+    </script>
 </body>
 
 </html>
