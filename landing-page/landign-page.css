@@ -225,6 +225,18 @@ margin-left: 10px;
 }
 .slider .slides h2 {
   color: var(--gold);
+  font-size: 3em;
+}
+
+.slider .slides:last-child h2 span {
+  text-align: end;
+}
+
+.slider .slides h2 span {
+  color: var(--orange);
+  font-size: 0.5em;
+  font-weight: 350;
+  font-style: italic;
 }
 
 .slider .slides h2:last-child{
