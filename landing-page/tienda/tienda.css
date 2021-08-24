@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "perpetua";
+  }
+  :root{
+    --black: #2f2f2f;
+    --white: #ffffff;
+    --gold: #ede499;
+    --coffe: #443130;
+    --orange: #c19e72;
+  }
+  .main{
+    position: relative;
+    min-height: 100vh;
+    background: linear-gradient(#2f2f2f, #443130);
+    padding: 30px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .main::before{
+    content: 'Estancos';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16vw;
+    font-weight: 700;
+    color: rgba(237, 228, 153, 0.05);
+  }
+  header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+  .logo{
+    max-width: 180px;
+  }
+  .navigation{
+    display: flex;
+  }
+  .navigation li{
+    list-style: none;
+  }
+  .navigation li a {
+    position: relative;
+    color: var(--gold);
+    margin-left: 40px;
+    text-decoration: none;
+    transition: 0.25s;
+  }
+  .navigation li a:hover{
+    color: var(--white);
+  }
+  .container{
+      margin-top: 150px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      width: 80%;
+  }
+  .container .product {
+    height: 300px;
+    width: 50%;
+    position: relative;
+    display: flex;
+    margin: 20px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
