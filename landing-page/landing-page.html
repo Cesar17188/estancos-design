@@ -12,24 +12,26 @@
 <body>
     <section class="main">
         <header>
-            <a href="#"><img class="logo" src="https://drive.google.com/uc?export=view&id=10_4wtWX3SmbfQKSpWnyYhPydSPNBfngy" alt=""></a>
+            <a href="./landing-page.html"><img class="logo"
+                    src="https://drive.google.com/uc?export=view&id=10_4wtWX3SmbfQKSpWnyYhPydSPNBfngy" alt=""></a>
             <ul class="navigation">
-                <li><a href="#">Tienda</a></li>
+                <li><a href="./tienda/tienda.html">Tienda</a></li>
                 <li><a href="#">Galeria</a></li>
                 <li><a href="#">Sobre nosotros</a></li>
                 <li><a href="#">Contactanos</a></li>
             </ul>
             <div class="toggle">
-                <img src="https://img.icons8.com/material-outlined/36/000000/menu--v3.png"/>
+                <img src="https://img.icons8.com/material-outlined/36/000000/menu--v3.png" />
             </div>
         </header>
         <div class="content">
             <h2><span>Estancos</span> Destilary Company</h2>
-            <a href="#" class="btn">Entrar ahora</a>
-            <img src="https://drive.google.com/uc?export=view&id=10_4wtWX3SmbfQKSpWnyYhPydSPNBfngy" class="escudo" alt="">
+            <a href="./tienda/tienda.html" class="btn">Entrar ahora</a>
+            <img src="https://drive.google.com/uc?export=view&id=10_4wtWX3SmbfQKSpWnyYhPydSPNBfngy" class="escudo"
+                alt="">
         </div>
 
-    <!-- slider content -->
+        <!-- slider content -->
 
         <div class="slider">
             <div class="slides active">
@@ -46,13 +48,19 @@
             </div>
         </div>
 
-<!-- footer -->
+        <!-- footer -->
 
         <div class="footer">
             <ul class="sci">
-                <li><a href=""><ion-icon name="logo-facebook"></ion-icon></a></li>
-                <li><a href=""><ion-icon name="logo-twitter"></ion-icon></a></li>
-                <li><a href=""><ion-icon name="logo-instagram"></ion-icon></a></li>
+                <li><a href="">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a></li>
+                <li><a href="">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a></li>
+                <li><a href="">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a></li>
             </ul>
             <div class="dots">
                 <span class="dot active"></span>
@@ -69,16 +77,16 @@
         const dots = document.querySelectorAll('.dot');
 
         function setActive(i) {
-            for(slide of slides)
-            slide.classList.remove('active');
+            for (slide of slides)
+                slide.classList.remove('active');
             slides[i].classList.add('active');
-            for(dot of dots)
-            dot.classList.remove('active');
+            for (dot of dots)
+                dot.classList.remove('active');
             dots[i].classList.add('active');
         }
 
-        for(let j=0; j<dots.length; j++){
-            dots[j].addEventListener('click', function() {
+        for (let j = 0; j < dots.length; j++) {
+            dots[j].addEventListener('click', function () {
                 setActive(j)
             })
         }
