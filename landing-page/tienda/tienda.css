@@ -91,6 +91,7 @@ header {
   align-items: center;
   border-radius: 20px;
   transition: 0.5s;
+  margin-bottom: 10px;
 }
 
 .card .circle {
@@ -115,7 +116,7 @@ header {
   transition: 0.5s;
 }
 .card:hover .circle:before {
-  background: var(--orange);
+  background: linear-gradient(#2f2f2f, #443130);
   clip-path: circle(400px at center);
 }
 
@@ -150,7 +151,7 @@ header {
 }
 
 .card .content h2 {
-  color: var(--white);
+  color: var(--gold);
   text-transform: uppercase;
   font-size: 2em;
   line-height: 1em;
@@ -159,7 +160,7 @@ header {
 
 .card .content p {
   font-size: 1.5em;
-  color: var(--coffe);
+  color: var(--white);
 }
 .card .content a {
   position: relative;
